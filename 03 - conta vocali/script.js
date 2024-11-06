@@ -22,4 +22,4 @@ const prova = CercaVocali(word);
 console.log(prova);
 
 
-//Risultato atteso se si passa 'javascript': 3 (a, a, i
+//Risultato atteso se si passa 'javascript': 3 (a, a, i)

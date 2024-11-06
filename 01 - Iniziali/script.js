@@ -9,16 +9,24 @@ function CicloArray(myArray){
     for(let i = 0; i<myArray.length;i++){
         nuovaArray.push(myArray[i][0]);
     }
-
-
     return nuovaArray;
 }
 
-
 // Invoca la funzione qui e stampa il risultato in console
 const iniziali = CicloArray(names);
-console.log(iniziali);
+//console.log(iniziali);
+const arrow = (names) => names.map((nome) => nome[0]);
+//console.log(arrow(names));
 
 
+function zizizo(){
+    const arrayziziz= [];
+    names.forEach(ciccio => {
+        arrayziziz.push(ciccio[0]);
+    });    
+    return arrayziziz;
+}
+const prova = zizizo();
+console.log(prova);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

@@ -19,3 +19,4 @@ const parolaInzialeDiLettera = CicloArray(names, 'a');
 console.log(parolaInzialeDiLettera);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
