@@ -4,10 +4,27 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+function CercaVocali(stringa){
+    const newArray = [];
+    const arrayVocali = ['a','e','i','o','u'];
+    for(let i = 0; i<stringa.length;i++){
+        if(stringa[i].includes(arrayVocali)){
+            newArray.push();
+        }
+    }
 
+    return newArray;
+}
+
+// function Cicla(){
+//     for(let i = 0; i<arrayVocali.length;i++){
+//         return arrayVocali;
+//     }
+// }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const prova = CercaVocali(word);
+console.log(prova);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
