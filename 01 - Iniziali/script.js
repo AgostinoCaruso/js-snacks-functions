@@ -4,17 +4,17 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function CicloArray(){
+function CicloArray(array){
     const nuovaArray = [];
-    for(let i = 0; i<names.length;i++){
-        nuovaArray.push(names[i][0]);
+    for(let i = 0; i<array.length;i++){
+        nuovaArray.push(array[i][0]);
     }
 
 
     return nuovaArray;
 }
 
-const iniziali = CicloArray();
+const iniziali = CicloArray(names);
 console.log(iniziali);
 
 // Invoca la funzione qui e stampa il risultato in console
