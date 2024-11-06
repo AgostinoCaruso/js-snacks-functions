@@ -4,10 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function CicloArray(myArray, lettera){
+    const newArray = [];
+    for(let i = 0; i<myArray.length; i++){
+        if(myArray[i][0].toLowerCase() == lettera.toLowerCase()){
+            newArray.push(myArray[i]);
+        }
+    }
+    return newArray;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+const parolaInzialeDiLettera = CicloArray(names, 'a');
+console.log(parolaInzialeDiLettera);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
